@@ -49,7 +49,7 @@ export function Education() {
           <div ref={scroller} className="mt-4 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4">
             {certificates.map((item) => (
               <article key={item.id} className="glass w-72 shrink-0 snap-start rounded-3xl p-6">
-                <p className="font-mono text-xs text-signal">{item.year}</p>
+                {item.year ? <p className="font-mono text-xs text-signal">{item.year}</p> : null}
                 <h4 className="mt-4 font-display text-2xl leading-tight tracking-tight">{item.name}</h4>
                 <p className="mt-4 text-sm text-muted-foreground">{item.issuer}</p>
               </article>

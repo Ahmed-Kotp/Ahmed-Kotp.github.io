@@ -49,7 +49,7 @@ export function PwaTabs() {
   }
 
   return (
-    <nav className="pwa-tabs no-print lg:hidden" aria-label="Sections">
+    <nav className="pwa-tabs no-print" aria-label="Sections">
       {dict.nav.map((item) => {
         const Icon = icons[item.id] ?? Smartphone;
         const current = onHome && active === item.id;

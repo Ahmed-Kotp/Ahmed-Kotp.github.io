@@ -1,5 +1,17 @@
 [
   {
+    "id": "udemy-ai-coder",
+    "name": "AI Coder: Complete Claude Code & Coding Agents Course",
+    "issuer": "Udemy · Ed Donner",
+    "year": ""
+  },
+  {
+    "id": "udemy-nodejs",
+    "name": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+    "issuer": "Udemy · Maximilian Schwarzmüller",
+    "year": ""
+  },
+  {
     "id": "udemy-ai-rn",
     "name": "Build an AI-Powered React Native ChatGPT Mobile App",
     "issuer": "Udemy",

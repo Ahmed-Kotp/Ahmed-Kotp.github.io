@@ -106,7 +106,8 @@ export default function CvPage() {
         <ul className="mt-2 list-disc ps-5 text-sm">
           {certificates.map((item) => (
             <li key={item.id}>
-              {item.name} — {item.issuer}, {item.year}
+              {item.name} — {item.issuer}
+              {item.year ? `, ${item.year}` : ""}
             </li>
           ))}
         </ul>
