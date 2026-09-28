@@ -78,8 +78,12 @@ export function getProject(id: string): Project | undefined {
   return projects.find((project) => project.id === id);
 }
 
+export function getPublicProjects(): Project[] {
+  return projects.filter((project) => project.status !== "unreleased");
+}
+
 export function getFeaturedProjects(): Project[] {
-  return projects.filter((project) => project.featured);
+  return getPublicProjects().filter((project) => project.featured);
 }
 
 export function getEducation(): Education[] {

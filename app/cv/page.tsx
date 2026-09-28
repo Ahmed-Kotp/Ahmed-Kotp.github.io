@@ -1,5 +1,5 @@
 import { PrintButton } from "@/components/cv/print-button";
-import { getCertificates, getDictionary, getEducation, getExperience, getProfile, getProjects, getSkills } from "@/lib/data";
+import { getCertificates, getDictionary, getEducation, getExperience, getProfile, getPublicProjects, getSkills } from "@/lib/data";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function CvPage() {
   const skills = getSkills();
   const experience = getExperience().filter((job) => job.type !== "prior");
   const prior = getExperience().filter((job) => job.type === "prior");
-  const projects = getProjects().filter((project) => project.featured);
+  const projects = getPublicProjects();
   const education = getEducation();
   const certificates = getCertificates();
 

@@ -36,7 +36,7 @@
       "Designed child-friendly, accessible UI that stays simple while staying interactive."
     ],
     "status": "unreleased",
-    "featured": true,
+    "featured": false,
     "accent": "#f59e0b",
     "visual": "story",
     "company": "Fablebox"
@@ -87,8 +87,8 @@
   },
   {
     "id": "physiotherabia",
-    "name": "Physiotherabia",
-    "tagline": "Fitness planning in the ElCoach suite.",
+    "name": "Physiotherabia Wellness",
+    "tagline": "Wellness, workout, and diet planning in the ElCoach suite.",
     "description": "A fitness app in the ElCoach suite focused on workout and diet planning. It went through the same architecture migration, performance work and shared design system as the rest of the suite.",
     "role": "Mid-Level React Native Developer",
     "platform": ["iOS", "Android"],

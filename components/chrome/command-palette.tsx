@@ -2,7 +2,7 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { useLocale } from "@/components/providers/locale-provider";
-import { getProjects } from "@/lib/data";
+import { getPublicProjects } from "@/lib/data";
 import { scrollToTarget } from "@/lib/scroll";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -25,7 +25,7 @@ export function CommandPalette() {
       href: `/#${item.id}`,
       kind: "section",
     }));
-    const projects: Item[] = getProjects().map((project) => ({
+    const projects: Item[] = getPublicProjects().map((project) => ({
       id: project.id,
       label: project.name,
       group: dict.command.groupProjects,

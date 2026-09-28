@@ -161,7 +161,7 @@ function JobCard({ jobId, muted = false }: { jobId: string; muted?: boolean }) {
           <div className="mt-5 flex flex-wrap gap-3 text-sm">
             {job.projectIds.map((id) => {
               const project = getProject(id);
-              if (!project) return null;
+              if (!project || project.status === "unreleased") return null;
               return (
                 <Link key={id} href={`/projects/${id}/`} className="text-signal underline-offset-4 hover:underline">
                   {project.name}

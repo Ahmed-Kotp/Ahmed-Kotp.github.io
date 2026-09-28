@@ -81,8 +81,8 @@
     "projects": {
       "id": "work",
       "eyebrow": "04 — Selected work",
-      "title": "Apps in the stores, and one still in the lab.",
-      "lede": "Featured products lead. Adding a project is one object in projects.json."
+      "title": "Apps in the stores.",
+      "lede": "The shipped products: the ElCoach suite, Roya, and the rest. An app stays off this list until it is released."
     },
     "education": {
       "id": "education",

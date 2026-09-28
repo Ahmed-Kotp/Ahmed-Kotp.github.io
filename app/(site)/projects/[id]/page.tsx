@@ -1,12 +1,12 @@
 import { ProjectDetail } from "@/components/projects/project-detail";
-import { getProject, getProjects, getUi } from "@/lib/data";
+import { getProject, getPublicProjects, getUi } from "@/lib/data";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type Props = { params: Promise<{ id: string }> };
 
 export function generateStaticParams() {
-  return getProjects().map((project) => ({ id: project.id }));
+  return getPublicProjects().map((project) => ({ id: project.id }));
 }
 
 export const dynamicParams = false;
