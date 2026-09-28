@@ -93,7 +93,7 @@ Paths are local. `next/image` is configured with `images.unoptimized` so the sta
 
 ### Contact form
 
-The project form is always visible and emails `profile.json` → `email` through FormSubmit. The first time, FormSubmit sends that inbox a one-time activation link; click it, then new requests arrive as email. A custom endpoint still overrides that. Copy `.env.example` to `.env.local`:
+The project form opens the visitor’s email app with the brief addressed to `profile.json` → `email`. They press send there. Ignore any FormSubmit activation mail; that service is not used. A custom endpoint still overrides the mail app. Copy `.env.example` to `.env.local`:
 
 ```bash
 # Formspree

@@ -53,7 +53,7 @@
     "send": "Send project request",
     "sending": "Sending…",
     "sent": "Request sent. I will reply by email.",
-    "mailOpened": "Your email app opened with this request. Send it from there.",
+    "mailOpened": "Your email app should be open with this request. Press send so it reaches me.",
     "sendError": "Could not send. Please email me directly.",
     "viewProject": "View project",
     "appStore": "App Store",
@@ -91,7 +91,7 @@
     "optionFullStack": "Full-stack app and backend",
     "optionAi": "AI integration",
     "optionProduct": "Mobile app, full-stack, and AI",
-    "formNote": "This request is emailed directly to me. I reply to the address you enter.",
+    "formNote": "Send opens an email to me with your brief already written. Press send in your mail app and I will reply.",
     "previous": "Previous certificates",
     "next": "Next certificates"
   },

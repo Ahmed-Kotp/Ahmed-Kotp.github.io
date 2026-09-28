@@ -40,53 +40,34 @@ export function Contact() {
     const company = String(data.get("company") ?? "");
     const project = String(data.get("project") ?? "");
     const message = String(data.get("message") ?? "");
+    const subject = `Project request: ${project} — ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nProject: ${project}\n\n${message}`;
+    if (!endpoint) {
+      const mailto = document.createElement("a");
+      mailto.href = `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      mailto.click();
+      setStatus("sent");
+      setNote(dict.buttons.mailOpened);
+      return;
+    }
     setStatus("sending");
     try {
-      const response = endpoint
-        ? await fetch(endpoint, {
-            method: "POST",
-            headers: { Accept: "application/json" },
-            body: (() => {
-              const body = new FormData();
-              body.set("name", name);
-              body.set("email", email);
-              body.set("company", company);
-              body.set("project", project);
-              body.set("message", message);
-              body.set("subject", `Project request: ${project} — ${name}`);
-              if (accessKey) body.set("access_key", accessKey);
-              return body;
-            })(),
-          })
-        : await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(profile.email)}`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: JSON.stringify({
-              name,
-              email,
-              company,
-              project,
-              message,
-              _subject: `Project request: ${project} — ${name}`,
-              _replyto: email,
-              _template: "table",
-              _captcha: "false",
-            }),
-          });
-      const payload = (await response.json().catch(() => null)) as { success?: string | boolean; message?: string } | null;
-      const accepted = response.ok && payload?.success !== false && payload?.success !== "false";
-      if (!accepted) {
-        const needsActivation = !endpoint && (payload?.message ?? "").toLowerCase().includes("activation");
-        if (needsActivation) {
-          const subject = encodeURIComponent(`Project request: ${project} — ${name}`);
-          const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}\nProject: ${project}\n\n${message}`);
-          window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-          setStatus("sent");
-          setNote(dict.buttons.mailOpened);
-          return;
-        }
-        throw new Error("Request failed");
-      }
+      const payload = new FormData();
+      payload.set("name", name);
+      payload.set("email", email);
+      payload.set("company", company);
+      payload.set("project", project);
+      payload.set("message", message);
+      payload.set("subject", subject);
+      if (accessKey) payload.set("access_key", accessKey);
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: payload,
+      });
+      const result = (await response.json().catch(() => null)) as { success?: string | boolean } | null;
+      const accepted = response.ok && result?.success !== false && result?.success !== "false";
+      if (!accepted) throw new Error("Request failed");
       setStatus("sent");
       setNote(dict.buttons.sent);
       form.reset();
