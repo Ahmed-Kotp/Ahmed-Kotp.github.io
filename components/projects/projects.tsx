@@ -90,6 +90,11 @@ function ProjectCard({ project }: { project: Project }) {
         <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.16em] text-signal">{project.company}</p>
         <p className="mt-2 text-sm text-muted-foreground">{project.tagline}</p>
       </Link>
+      {hasUrl(project.appStoreUrl) || hasUrl(project.playStoreUrl) ? (
+        <div className="flex flex-wrap gap-2 px-4 pb-3">
+          <StoreLinks project={project} />
+        </div>
+      ) : null}
       <div className="flex flex-wrap gap-2 px-4 pb-4">
         {project.tech.slice(0, 4).map((item) => (
           <span key={item} className="rounded-full bg-muted px-2.5 py-1 text-[11px]">
