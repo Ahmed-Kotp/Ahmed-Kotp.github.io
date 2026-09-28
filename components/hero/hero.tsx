@@ -65,11 +65,12 @@ export function Hero() {
       </div>
       <div className="relative mx-auto grid w-full max-w-[1400px] items-end gap-12 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
-          <p className="inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground">
+          <p className="inline-flex max-w-full flex-col items-start gap-1 rounded-3xl border border-border bg-card px-3 py-2 text-xs text-muted-foreground sm:rounded-full sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-2">
             <span className="inline-flex items-center gap-2">
               <span className="pulse-dot relative size-2 rounded-full bg-emerald-400" />
               {dict.profile.availability}
             </span>
+            <span>{dict.profile.relocation}</span>
             <span className="whitespace-nowrap">{profile.location}</span>
           </p>
           <h1 className="mt-6 font-display text-[clamp(3.25rem,15vw,8.6rem)] leading-[0.82] tracking-[-0.07em]">
@@ -101,12 +102,15 @@ export function Hero() {
           <p className="sr-only">{dict.roles.join(", ")}</p>
           <p className="mt-2 text-muted-foreground">{dict.profile.subtitle}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <button type="button" className={buttonVariants({ variant: "gradient" })} onClick={() => scrollToTarget("#work")}>
-              {dict.buttons.viewWork}
+            <button type="button" className={buttonVariants({ variant: "gradient" })} onClick={() => scrollToTarget("#contact")}>
+              {dict.buttons.startProject}
             </button>
-            <a className={buttonVariants({ variant: "ghost" })} href={profile.cvPath} download>
+            <a className={buttonVariants({ variant: "primary" })} href={profile.cvPath} download>
               {dict.buttons.downloadCv}
             </a>
+            <button type="button" className={buttonVariants({ variant: "ghost" })} onClick={() => scrollToTarget("#work")}>
+              {dict.buttons.viewWork}
+            </button>
           </div>
           <div className="mt-8">
             <TerminalWidget />

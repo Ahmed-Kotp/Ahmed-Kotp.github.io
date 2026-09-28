@@ -94,7 +94,7 @@ Paths are local. `next/image` is configured with `images.unoptimized` so the sta
 
 ### Contact form
 
-The mailto button is always visible. The form is hidden until you set an endpoint. Copy `.env.example` to `.env.local`:
+The project form is always visible and emails `profile.json` → `email` through FormSubmit. The first time, FormSubmit sends that inbox a one-time activation link; click it, then new requests arrive as email. A custom endpoint still overrides that. Copy `.env.example` to `.env.local`:
 
 ```bash
 # Formspree

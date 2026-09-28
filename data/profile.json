@@ -10,7 +10,8 @@
   "showPhone": false,
   "availability": {
     "status": "available",
-    "label": "Open to remote roles"
+    "label": "Open to remote roles",
+    "relocation": "Open to relocation in the Gulf, EU, and the USA"
   },
   "socials": [
     {

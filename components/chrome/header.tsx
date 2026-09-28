@@ -3,6 +3,7 @@
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useLocale } from "@/components/providers/locale-provider";
 import { useTheme } from "@/components/providers/theme-provider";
+import { buttonVariants } from "@/components/ui/button";
 import { getProfile } from "@/lib/data";
 import { scrollToTarget } from "@/lib/scroll";
 import { cn } from "@/lib/utils";
@@ -87,6 +88,9 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <a href={profile.cvPath} download className={cn(buttonVariants({ variant: "primary", size: "sm" }), "hidden sm:inline-flex")}>
+            {dict.buttons.downloadCv}
+          </a>
           <button
             type="button"
             onClick={() => window.dispatchEvent(new Event("open-command"))}
@@ -126,6 +130,9 @@ export function Header() {
         <DialogContent closeLabel={dict.buttons.closeMenu} className="lg:hidden">
           <DialogTitle className="font-display text-2xl">{profile.name}</DialogTitle>
           <nav className="mt-6 grid gap-2" aria-label="Mobile">
+            <a href={profile.cvPath} download className={buttonVariants({ variant: "primary" })} onClick={() => setOpen(false)}>
+              {dict.buttons.downloadCv}
+            </a>
             {dict.nav.map((item) => (
               <button
                 key={item.id}

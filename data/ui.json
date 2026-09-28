@@ -3,7 +3,7 @@
   "seo": {
     "title": "Ahmed Kotp — Senior React Native Developer",
     "siteName": "Ahmed Kotp",
-    "description": "Senior React Native developer in Giza shipping AI-powered iOS and Android apps. 9 production apps, 5 independently deployed, 100K+ users.",
+    "description": "Senior React Native developer open to remote roles and relocation in the Gulf, EU, and the USA. Full-stack mobile apps with AI integration.",
     "keywords": [
       "Ahmed Kotp",
       "React Native",
@@ -11,7 +11,10 @@
       "TypeScript",
       "RAG",
       "Mobile Engineer",
-      "React Native Developer Egypt"
+      "React Native Developer Egypt",
+      "Full-stack mobile",
+      "AI integration",
+      "Remote React Native"
     ]
   },
   "nav": [
@@ -42,13 +45,15 @@
   ],
   "buttons": {
     "viewWork": "View Work",
+    "startProject": "Start a project",
     "downloadCv": "Download CV",
     "backToTop": "Back to top",
     "copyEmail": "Copy email",
     "copied": "Copied",
-    "send": "Send message",
+    "send": "Send project request",
     "sending": "Sending…",
-    "sent": "Message sent",
+    "sent": "Request sent. I will reply by email.",
+    "mailOpened": "Your email app opened with this request. Send it from there.",
     "sendError": "Could not send. Please email me directly.",
     "viewProject": "View project",
     "appStore": "App Store",
@@ -78,9 +83,15 @@
     "noResults": "No projects match these filters.",
     "featured": "Featured",
     "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "formNote": "The form posts to your Web3Forms or Formspree endpoint. It stays hidden until that endpoint is set.",
+    "email": "Work email",
+    "company": "Company",
+    "projectType": "What should I build?",
+    "message": "Project brief",
+    "optionMobile": "Mobile app",
+    "optionFullStack": "Full-stack app and backend",
+    "optionAi": "AI integration",
+    "optionProduct": "Mobile app, full-stack, and AI",
+    "formNote": "This request is emailed directly to me. I reply to the address you enter.",
     "previous": "Previous certificates",
     "next": "Next certificates"
   },
@@ -118,8 +129,8 @@
     "contact": {
       "id": "contact",
       "eyebrow": "06 — Contact",
-      "title": "Let's build something.",
-      "lede": "A new mobile product, a release that needs an owner, or a team that wants a senior reviewer."
+      "title": "Tell me the app you want built.",
+      "lede": "I ship full-stack mobile products with AI built in: iOS, Android, the backend, and features such as chat, voice, and RAG."
     }
   },
   "status": {
@@ -153,6 +164,7 @@
     "tagline": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development.",
     "summary": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development. Hands-on experience across 9 production apps, having independently deployed 5 to the App Store and Google Play, including high-traffic products such as the ElCoach suite, which serves over 100,000 users. Specializes in integrating AI directly into mobile products (a RAG-powered chatbot and real-time AI-assisted experiences) with strong fundamentals in TypeScript, cross-platform architecture and API integration. Leads code reviews and production sign-off for a small team and is comfortable managing several concurrent engagements.",
     "availability": "Open to remote roles",
+    "relocation": "Open to relocation in the Gulf, EU, and the USA",
     "languagesLabel": "Languages",
     "locationLabel": "Based in"
   },

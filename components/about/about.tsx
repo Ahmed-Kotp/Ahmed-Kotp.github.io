@@ -20,10 +20,11 @@ export function About() {
         </Reveal>
         <Reveal delay={0.05} className="glass rounded-3xl p-6 md:col-span-2">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-signal">{dict.buttons.status}</p>
-          <p className="mt-4 inline-flex items-center gap-2 font-display text-3xl tracking-tight">
-            <span className="pulse-dot relative size-2 rounded-full bg-emerald-400" />
+          <p className="mt-4 inline-flex items-center gap-2 font-display text-2xl tracking-tight">
+            <span className="pulse-dot relative size-2 shrink-0 rounded-full bg-emerald-400" />
             {dict.profile.availability}
           </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{dict.profile.relocation}</p>
         </Reveal>
         <Reveal delay={0.1} className="glass rounded-3xl p-6 md:col-span-2">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-signal">{dict.profile.locationLabel}</p>
