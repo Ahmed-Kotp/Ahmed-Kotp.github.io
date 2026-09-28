@@ -1,4 +1,3 @@
-import arJson from "@/data/i18n/ar.json";
 import enJson from "@/data/i18n/en.json";
 import certificatesJson from "@/data/certificates.json";
 import educationJson from "@/data/education.json";
@@ -37,7 +36,6 @@ const education = z.array(educationSchema).parse(educationJson);
 const certificates = z.array(certificateSchema).parse(certificatesJson);
 const ui = uiSchema.parse(uiJson);
 const en = dictionarySchema.parse(enJson);
-const ar = dictionarySchema.parse(arJson);
 
 const uiCopy = dictionarySchema.parse(ui);
 
@@ -58,7 +56,7 @@ for (const job of experience) {
   }
 }
 
-const dictionaries: Record<Locale, Dictionary> = { en, ar };
+const dictionaries: Record<Locale, Dictionary> = { en };
 
 export function getProfile(): Profile {
   return profile;

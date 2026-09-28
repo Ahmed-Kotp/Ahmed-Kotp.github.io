@@ -38,6 +38,7 @@ export const profileSchema = z.object({
   languages: z.array(languageSchema).min(1),
   roles: z.array(z.string()).min(1),
   cvPath: z.string(),
+  portrait: z.string(),
 });
 
 export const skillSchema = z.object({
@@ -257,6 +258,6 @@ export type Education = z.infer<typeof educationSchema>;
 export type Certificate = z.infer<typeof certificateSchema>;
 export type Dictionary = z.infer<typeof dictionarySchema>;
 export type Ui = z.infer<typeof uiSchema>;
-export type Locale = "en" | "ar";
+export type Locale = "en";
 export type ProjectStatus = Project["status"];
 export type ExperienceType = Experience["type"];

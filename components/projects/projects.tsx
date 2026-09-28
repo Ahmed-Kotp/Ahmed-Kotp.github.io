@@ -97,7 +97,7 @@ function FeaturedShowcase({ projects }: { projects: Project[] }) {
       <div className="mx-auto mb-4 h-px max-w-[1400px] bg-border px-5 sm:px-8">
         <div className="h-px origin-left bg-gradient-to-r from-violet-400 to-cyan-300" style={{ transform: `scaleX(${Math.max(progress, 0.08)})` }} />
       </div>
-      <div ref={track} onScroll={onScroll} className="flex snap-x snap-mandatory gap-0 overflow-x-auto">
+      <div ref={track} onScroll={onScroll} className="flex w-full min-w-0 snap-x snap-mandatory gap-0 overflow-x-auto">
         {projects.map((project) => (
           <article key={project.id} className="w-[88vw] shrink-0 snap-center px-5 sm:px-8 lg:w-[70vw] lg:px-10">
             <div className="grid items-center gap-8 lg:min-h-[80vh] lg:grid-cols-2">

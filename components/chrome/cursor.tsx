@@ -52,7 +52,7 @@ export function CustomCursor() {
     <div
       ref={dot}
       aria-hidden="true"
-      className="pointer-events-none fixed left-0 top-0 z-[75] hidden rounded-full border border-white/70 bg-white/10 mix-blend-difference md:block"
+      className="cursor-dot pointer-events-none fixed left-0 top-0 z-[75] hidden rounded-full md:block"
     />
   );
 }

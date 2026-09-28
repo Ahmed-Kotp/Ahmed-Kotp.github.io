@@ -52,10 +52,6 @@ html {
   scroll-padding-top: 5.5rem;
 }
 
-html[dir="rtl"] body {
-  font-family: var(--font-arabic), var(--font-outfit), sans-serif;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -144,10 +140,6 @@ body {
   animation: marquee 42s linear infinite;
 }
 
-html[dir="rtl"] .marquee-track {
-  animation-direction: reverse;
-}
-
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
@@ -192,6 +184,26 @@ html[dir="rtl"] .marquee-track {
   html.custom-cursor select {
     cursor: text !important;
   }
+}
+
+.cursor-dot {
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.18);
+  mix-blend-mode: difference;
+}
+
+html.light .cursor-dot {
+  border-color: #111111;
+  background: #111111;
+  mix-blend-mode: normal;
+}
+
+.site-header {
+  padding-top: env(safe-area-inset-top);
+}
+
+.site-layer {
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: reduce) {

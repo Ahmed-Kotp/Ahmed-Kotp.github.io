@@ -1,22 +1,24 @@
 import { SiteAnalytics } from "@/components/chrome/analytics";
+import { RegisterPwa } from "@/components/chrome/register-pwa";
 import { LocaleProvider } from "@/components/providers/locale-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { getProfile, getUi } from "@/lib/data";
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono, Noto_Sans_Arabic, Outfit, Syne } from "next/font/google";
+import { JetBrains_Mono, Outfit, Syne } from "next/font/google";
 import "./globals.css";
 
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne", display: "swap" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains", display: "swap" });
-const arabic = Noto_Sans_Arabic({ subsets: ["arabic"], variable: "--font-arabic", display: "swap" });
-
-const themeBoot = `(function(){try{var t=localStorage.getItem("theme");var r=document.documentElement;r.classList.add(t==="light"?"light":"dark");var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(sessionStorage.getItem("ak-intro")==="1"||reduce){r.dataset.intro="done";}var cv=location.pathname.indexOf("/cv")===0;var l=localStorage.getItem("locale");if(!cv&&l==="ar"){r.lang="ar";r.dir="rtl";}else{r.lang="en";r.dir="ltr";}}catch(e){document.documentElement.classList.add("dark");}})();`;
+const themeBoot = `(function(){try{var t=localStorage.getItem("theme");var r=document.documentElement;r.lang="en";r.dir="ltr";localStorage.removeItem("locale");r.classList.add(t==="light"?"light":"dark");var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(sessionStorage.getItem("ak-intro")==="1"||reduce){r.dataset.intro="done";}}catch(e){document.documentElement.classList.add("dark");}})();`;
 
 export const viewport: Viewport = {
   themeColor: "#07070b",
   colorScheme: "dark light",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export function generateMetadata(): Metadata {
@@ -46,6 +48,19 @@ export function generateMetadata(): Metadata {
       description: ui.seo.description,
     },
     robots: { index: true, follow: true },
+    applicationName: ui.seo.siteName,
+    appleWebApp: {
+      capable: true,
+      title: ui.seo.siteName,
+      statusBarStyle: "black-translucent",
+    },
+    icons: {
+      icon: [
+        { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+        { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
   };
 }
 
@@ -58,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: profile.name,
     jobTitle: profile.title,
     email: profile.email,
+    image: new URL(profile.portrait, ui.siteUrl).toString(),
     url: ui.siteUrl,
     address: {
       "@type": "PostalAddress",
@@ -73,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${outfit.variable} ${jetbrains.variable} ${arabic.variable} h-full`}
+      className={`${syne.variable} ${outfit.variable} ${jetbrains.variable} h-full`}
       suppressHydrationWarning
     >
       <head>
@@ -89,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <TooltipProvider>
               {children}
               <SiteAnalytics />
+              <RegisterPwa />
             </TooltipProvider>
           </LocaleProvider>
         </ThemeProvider>

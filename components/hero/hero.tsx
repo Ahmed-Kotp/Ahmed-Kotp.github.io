@@ -9,6 +9,7 @@ import { scrollToTarget } from "@/lib/scroll";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { useEffect, useState, useSyncExternalStore } from "react";
 
 const HeroCanvas = dynamic(() => import("@/components/hero/hero-canvas"), { ssr: false });
@@ -50,7 +51,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-dvh items-end overflow-hidden pb-16 pt-28"
+      className="relative flex min-h-dvh items-end overflow-hidden pb-16 pt-[calc(7rem+env(safe-area-inset-top))]"
       onMouseMove={(event) => {
         if (reduced) return;
         const bounds = event.currentTarget.getBoundingClientRect();
@@ -63,8 +64,18 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0">
         {webgl ? <HeroCanvas /> : null}
       </div>
-      <div className="relative mx-auto grid w-full max-w-[1400px] items-end gap-12 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
-        <div>
+      <div className="relative mx-auto grid w-full max-w-[1400px] items-end gap-8 px-5 sm:gap-12 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <figure className="relative z-20 aspect-[4/5] w-32 overflow-hidden rounded-[1.6rem] border border-border shadow-[0_24px_60px_-28px_rgba(139,92,246,0.85)] sm:w-40 lg:col-start-2 lg:row-start-1 lg:w-52 lg:justify-self-end lg:self-end">
+          <Image
+            src={profile.portrait}
+            alt={profile.name}
+            fill
+            priority
+            sizes="(min-width: 1024px) 208px, 160px"
+            className="object-cover object-[center_20%]"
+          />
+        </figure>
+        <div className="lg:col-start-1 lg:row-start-1">
           <p className="inline-flex max-w-full flex-col items-start gap-1 rounded-3xl border border-border bg-card px-3 py-2 text-xs text-muted-foreground sm:rounded-full sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-2">
             <span className="inline-flex items-center gap-2">
               <span className="pulse-dot relative size-2 rounded-full bg-emerald-400" />
@@ -116,7 +127,7 @@ export function Hero() {
             <TerminalWidget />
           </div>
         </div>
-        <div className="relative mx-auto h-72 w-full max-w-md sm:h-[540px] sm:max-w-none" aria-hidden="true">
+        <div className="relative mx-auto h-64 w-full max-w-md sm:h-[540px] sm:max-w-none lg:col-start-2 lg:row-start-1 lg:mt-16" aria-hidden="true">
           {phones.map((project, index) => (
             <div
               key={project.id}

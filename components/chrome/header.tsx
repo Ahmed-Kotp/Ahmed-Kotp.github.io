@@ -13,7 +13,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function Header() {
-  const { dict, locale, toggle } = useLocale();
+  const { dict } = useLocale();
   const { toggle: toggleTheme } = useTheme();
   const pathname = usePathname();
   const router = useRouter();
@@ -60,7 +60,7 @@ export function Header() {
   }
 
   return (
-    <header className={cn("no-print fixed inset-x-0 top-0 z-40 transition-colors", scrolled && "bg-background/75 backdrop-blur-xl")}>
+    <header className={cn("site-header no-print fixed inset-x-0 top-0 z-40 transition-colors", scrolled && "bg-background/75 backdrop-blur-xl")}>
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:z-[90] focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:text-background"
@@ -98,14 +98,6 @@ export function Header() {
             aria-label={dict.buttons.commandPalette}
           >
             <span>⌘K</span>
-          </button>
-          <button
-            type="button"
-            onClick={toggle}
-            className="inline-flex h-10 items-center rounded-full border border-border px-3 font-mono text-xs"
-            aria-label={dict.buttons.toggleLocale}
-          >
-            {locale === "en" ? "عربي" : "EN"}
           </button>
           <button
             type="button"

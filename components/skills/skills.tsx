@@ -82,7 +82,7 @@ export function Skills() {
     category === "all" ? skills.categories : skills.categories.filter((group) => group.id === category);
 
   return (
-    <section id={section.id} aria-labelledby={`${section.id}-title`} className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8">
+    <section id={section.id} aria-labelledby={`${section.id}-title`} className="mx-auto min-w-0 max-w-[1400px] px-5 py-24 sm:px-8">
       <SectionHeading id={`${section.id}-title`} eyebrow={section.eyebrow} title={section.title} lede={section.lede} />
       <div className="marquee mt-10 overflow-hidden rounded-full border border-border py-3" aria-hidden="true">
         <div className="marquee-track flex w-max gap-8 px-4 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">

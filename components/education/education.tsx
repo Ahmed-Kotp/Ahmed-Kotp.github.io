@@ -20,21 +20,21 @@ export function Education() {
   return (
     <section id={section.id} aria-labelledby={`${section.id}-title`} className="mx-auto max-w-[1400px] px-5 py-24 sm:px-8">
       <SectionHeading id={`${section.id}-title`} eyebrow={section.eyebrow} title={section.title} lede={section.lede} />
-      <div className="mt-12 grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
-        <div>
+      <div className="mt-12 grid min-w-0 gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="min-w-0">
           <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-signal">{dict.educationHeading}</h3>
           <div className="mt-4 space-y-4">
             {education.map((item) => (
               <Reveal key={item.id} className="glass rounded-3xl p-6">
                 <p className="font-mono text-xs text-signal">{item.year}</p>
-                <h4 className="mt-3 font-display text-3xl tracking-tight">{item.degree}</h4>
+                <h4 className="mt-3 text-balance font-display text-2xl tracking-tight sm:text-3xl">{item.degree}</h4>
                 <p className="mt-2">{item.school}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{item.detail}</p>
               </Reveal>
             ))}
           </div>
         </div>
-        <div>
+        <div className="min-w-0">
           <div className="flex items-center justify-between gap-4">
             <h3 className="font-mono text-[11px] uppercase tracking-[0.22em] text-signal">{dict.certificatesHeading}</h3>
             <div className="flex gap-2">

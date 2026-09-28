@@ -42,5 +42,6 @@
     { "name": "English", "level": "Professional" }
   ],
   "roles": ["Mobile Engineer", "AI Integrator", "Tech Lead"],
-  "cvPath": "/Ahmed_Kotp_CV.pdf"
+  "cvPath": "/Ahmed_Kotp_CV.pdf",
+  "portrait": "/ahmed-kotp.jpg"
 }

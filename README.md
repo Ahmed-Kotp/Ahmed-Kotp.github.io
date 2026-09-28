@@ -26,7 +26,6 @@ pnpm typecheck
 | `data/certificates.json` | Courses and diplomas |
 | `data/ui.json` | English UI labels, navigation, and SEO |
 | `data/i18n/en.json` | English UI. Must match the copy inside `ui.json` |
-| `data/i18n/ar.json` | Arabic UI. Same keys, right-to-left when selected |
 
 `lib/schemas.ts` validates every file at build time. A missing field fails `pnpm build` instead of shipping a broken page.
 
@@ -111,7 +110,7 @@ Vercel Analytics loads only when `NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS=true`.
 
 ### Language and theme
 
-The header switches English and Arabic (`dir="rtl"`) and light and dark. Both choices are stored in `localStorage`.
+The header switches light and dark. The choice is stored in `localStorage`. The site is English only.
 
 ## Deploy for free
 
