@@ -25,6 +25,7 @@ import {
   Layers,
   LayoutGrid,
   MousePointer2,
+  Orbit,
   PenTool,
   Play,
   Radio,
@@ -70,6 +71,7 @@ const icons: Record<string, LucideIcon> = {
   test: TestTube,
   bug: Bug,
   cursor: MousePointer2,
+  orbit: Orbit,
 };
 
 export function Skills() {
