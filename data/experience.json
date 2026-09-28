@@ -44,13 +44,13 @@
     "location": "Jordan",
     "type": "contract",
     "engagement": "Project-based · Remote",
-    "focus": "RoyaGold, a real-time gold price monitoring app for MENA (since delisted).",
+    "focus": "Live pricing and Roya TV for Roya Media Group.",
     "description": [
       "Led replatforming from a responsive web product to React Native CLI + TypeScript, shipping stable production releases.",
       "Built WebSocket-driven live pricing with sub-second update latency and an end-to-end gold-to-cash calculator."
     ],
     "tech": ["React Native CLI", "TypeScript", "WebSockets"],
-    "projectIds": ["roya-gold", "roya-tv"],
+    "projectIds": ["roya-tv"],
     "accent": "#eab308"
   },
   {
@@ -120,7 +120,7 @@
       "Delivered custom web and mobile solutions for small business clients, from requirements gathering to deployment."
     ],
     "tech": ["React Native", "React", "JavaScript"],
-    "projectIds": ["client-work"],
+    "projectIds": [],
     "accent": "#94a3b8"
   },
   {

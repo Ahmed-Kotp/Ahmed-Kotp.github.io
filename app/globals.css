@@ -204,6 +204,25 @@ html.light .cursor-dot {
 
 .site-layer {
   overflow-x: clip;
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+}
+
+.pwa-tabs {
+  position: fixed;
+  z-index: 40;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 1px solid var(--border);
+  background: color-mix(in oklab, var(--background) 88%, transparent);
+  backdrop-filter: blur(18px);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (min-width: 1024px) {
+  .site-layer {
+    padding-bottom: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -25,7 +25,7 @@
     "id": "foxtales",
     "name": "Foxtales",
     "tagline": "AI-narrated stories for children.",
-    "description": "An AI-driven, automation-powered children's storytelling app, not yet released. The work owns the interface layer that connects story content, ElevenLabs voice synthesis and automated story-generation pipelines, with child-friendly accessible flows.",
+    "description": "An AI-driven, automation-powered children's storytelling app, still in the lab. The work owns the interface layer that connects story content, ElevenLabs voice synthesis and automated story-generation pipelines, with child-friendly accessible flows.",
     "role": "React Native Developer",
     "platform": ["iOS", "Android"],
     "appStoreUrl": "",
@@ -35,7 +35,7 @@
       "Built the interface between story content, ElevenLabs voice and automated generation.",
       "Designed child-friendly, accessible UI that stays simple while staying interactive."
     ],
-    "status": "unreleased",
+    "status": "inLab",
     "featured": false,
     "accent": "#f59e0b",
     "visual": "story",
@@ -171,38 +171,17 @@
     "company": "Xcute"
   },
   {
-    "id": "roya-gold",
-    "name": "RoyaGold",
-    "tagline": "Live gold prices for MENA.",
-    "description": "A real-time gold price monitoring app for the MENA region, since delisted. It was replatformed from a responsive website to React Native CLI and TypeScript, with WebSocket pricing at sub-second latency and a gold-to-cash calculator.",
-    "role": "React Native Developer",
-    "platform": ["iOS", "Android"],
-    "appStoreUrl": "",
-    "playStoreUrl": "",
-    "tech": ["React Native CLI", "TypeScript", "WebSockets"],
-    "highlights": [
-      "Led the replatform from responsive web to React Native CLI + TypeScript.",
-      "WebSocket pricing with sub-second update latency.",
-      "End-to-end gold-to-cash calculator."
-    ],
-    "status": "delisted",
-    "featured": false,
-    "accent": "#eab308",
-    "visual": "gold",
-    "company": "Roya Media Group"
-  },
-  {
     "id": "roya-tv",
     "name": "Roya TV",
     "tagline": "Parent broadcast brand of Roya Media Group.",
-    "description": "The parent broadcast app associated with the Roya Media Group engagement that also produced RoyaGold. Store buttons stay hidden until App Store or Google Play URLs are added to this entry.",
+    "description": "The broadcast app for Roya Media Group. Store buttons stay hidden until App Store or Google Play URLs are added to this entry.",
     "role": "React Native Developer",
     "platform": ["iOS", "Android"],
     "appStoreUrl": "",
     "playStoreUrl": "",
     "tech": ["React Native", "TypeScript"],
     "highlights": [
-      "Parent media product alongside the RoyaGold price monitor.",
+      "Broadcast product for Roya Media Group.",
       "Add store URLs in projects.json when the public listings should appear."
     ],
     "status": "live",
@@ -210,25 +189,5 @@
     "accent": "#f43f5e",
     "visual": "broadcast",
     "company": "Roya Media Group"
-  },
-  {
-    "id": "client-work",
-    "name": "Client Work",
-    "tagline": "Custom web and mobile products.",
-    "description": "Custom web and mobile solutions for small business clients, taken from requirements gathering through deployment during a freelance period.",
-    "role": "Web & Mobile Developer",
-    "platform": ["iOS", "Android"],
-    "appStoreUrl": "",
-    "playStoreUrl": "",
-    "tech": ["React Native", "React", "JavaScript"],
-    "highlights": [
-      "Requirements through deployment for small business clients.",
-      "Custom web and mobile solutions, scoped per engagement."
-    ],
-    "status": "live",
-    "featured": false,
-    "accent": "#94a3b8",
-    "visual": "generic",
-    "company": "Freelance"
   }
 ]

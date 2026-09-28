@@ -13,8 +13,7 @@ import { useMemo, useState } from "react";
 
 const statusTone: Record<ProjectStatus, string> = {
   live: "bg-emerald-500/15 text-emerald-800 dark:text-emerald-200",
-  unreleased: "bg-amber-500/15 text-amber-900 dark:text-amber-100",
-  delisted: "bg-rose-500/15 text-rose-800 dark:text-rose-100",
+  inLab: "bg-amber-500/15 text-amber-900 dark:text-amber-100",
 };
 
 export function Projects() {
@@ -49,7 +48,7 @@ export function Projects() {
           <ChipRow
             label={dict.buttons.status}
             value={status}
-            options={["all", "live", "delisted"]}
+            options={["all", "live", "inLab"]}
             onChange={setStatus}
             format={(value) => (value === "all" ? dict.buttons.all : dict.status[value])}
           />

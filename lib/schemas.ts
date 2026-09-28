@@ -84,7 +84,7 @@ export const projectSchema = z.object({
   playStoreUrl: z.string(),
   tech: z.array(z.string()),
   highlights: z.array(z.string()),
-  status: z.enum(["live", "unreleased", "delisted"]),
+  status: z.enum(["live", "inLab"]),
   featured: z.boolean(),
   accent: z.string(),
   image: z.string().optional(),
@@ -184,8 +184,7 @@ export const dictionarySchema = z.object({
   }),
   status: z.object({
     live: z.string(),
-    unreleased: z.string(),
-    delisted: z.string(),
+    inLab: z.string(),
   }),
   types: z.object({
     "full-time": z.string(),

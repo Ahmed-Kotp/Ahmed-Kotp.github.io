@@ -2,6 +2,7 @@ import { CommandPalette } from "@/components/chrome/command-palette";
 import { CustomCursor } from "@/components/chrome/cursor";
 import { Footer } from "@/components/chrome/footer";
 import { Header } from "@/components/chrome/header";
+import { PwaTabs } from "@/components/chrome/pwa-tabs";
 import { Intro } from "@/components/chrome/intro";
 import { Konami } from "@/components/chrome/konami";
 import { ScrollProgress } from "@/components/chrome/scroll-progress";
@@ -19,6 +20,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="content">{children}</main>
         <Footer />
+        <PwaTabs />
         <CommandPalette />
         <Konami />
       </div>

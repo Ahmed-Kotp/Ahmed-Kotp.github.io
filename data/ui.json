@@ -118,7 +118,7 @@
       "id": "work",
       "eyebrow": "04 — Selected work",
       "title": "Apps in the stores.",
-      "lede": "The shipped products: the ElCoach suite, Roya, and the rest. An app stays off this list until it is released."
+      "lede": "Shipped apps in the stores, and Foxtales while it is still in the lab."
     },
     "education": {
       "id": "education",
@@ -135,8 +135,7 @@
   },
   "status": {
     "live": "Live",
-    "unreleased": "Unreleased",
-    "delisted": "Delisted"
+    "inLab": "In lab"
   },
   "types": {
     "full-time": "Full-time",

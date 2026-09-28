@@ -79,7 +79,7 @@ export function getProject(id: string): Project | undefined {
 }
 
 export function getPublicProjects(): Project[] {
-  return projects.filter((project) => project.status !== "unreleased");
+  return projects.filter((project) => project.status === "live" || project.status === "inLab");
 }
 
 export function getFeaturedProjects(): Project[] {
@@ -103,7 +103,7 @@ export function getDictionary(locale: Locale): Dictionary {
 }
 
 export function getRelatedProjects(project: Project, limit = 3): Project[] {
-  const scored = projects
+  const scored = getPublicProjects()
     .filter((item) => item.id !== project.id)
     .map((item) => ({
       item,

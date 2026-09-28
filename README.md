@@ -59,7 +59,7 @@ Append one object to `data/projects.json`:
 
 - `id` becomes the URL: `/projects/new-app/`.
 - `featured: true` puts it in the large showcase.
-- `status` is `live`, `unreleased`, or `delisted`.
+- `status` is `live` or `inLab`. Apps with any other status are omitted from the site.
 - `visual` picks the placeholder screen: `market`, `story`, `fitness`, `chat`, `gold`, `broadcast`, or `generic`.
 - Link it from a job by adding the id to that job's `projectIds`.
 

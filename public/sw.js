@@ -1,4 +1,4 @@
-const CACHE = "ahmed-kotp-v1";
+const CACHE = "ahmed-kotp-v2";
 const PRECACHE = ["/", "/cv/", "/ahmed-kotp.jpg", "/Ahmed_Kotp_CV.pdf", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", (event) => {
