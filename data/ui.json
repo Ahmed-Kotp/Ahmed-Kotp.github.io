@@ -1,0 +1,204 @@
+{
+  "siteUrl": "https://ahmed-kotp.github.io",
+  "seo": {
+    "title": "Ahmed Kotp — Senior React Native Developer",
+    "siteName": "Ahmed Kotp",
+    "description": "Senior React Native developer in Giza shipping AI-powered iOS and Android apps. 9 production apps, 5 independently deployed, 100K+ users.",
+    "keywords": [
+      "Ahmed Kotp",
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "RAG",
+      "Mobile Engineer",
+      "React Native Developer Egypt"
+    ]
+  },
+  "nav": [
+    {
+      "id": "about",
+      "label": "About"
+    },
+    {
+      "id": "skills",
+      "label": "Skills"
+    },
+    {
+      "id": "experience",
+      "label": "Experience"
+    },
+    {
+      "id": "work",
+      "label": "Work"
+    },
+    {
+      "id": "education",
+      "label": "Education"
+    },
+    {
+      "id": "contact",
+      "label": "Contact"
+    }
+  ],
+  "buttons": {
+    "viewWork": "View Work",
+    "downloadCv": "Download CV",
+    "backToTop": "Back to top",
+    "copyEmail": "Copy email",
+    "copied": "Copied",
+    "send": "Send message",
+    "sending": "Sending…",
+    "sent": "Message sent",
+    "sendError": "Could not send. Please email me directly.",
+    "viewProject": "View project",
+    "appStore": "App Store",
+    "playStore": "Google Play",
+    "all": "All",
+    "fullTime": "Full-time",
+    "freelance": "Freelance",
+    "contract": "Contract",
+    "partTime": "Part-time",
+    "skipIntro": "Skip",
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle color theme",
+    "toggleLocale": "Switch language",
+    "commandPalette": "Open command palette",
+    "showEarlier": "Show earlier career",
+    "hideEarlier": "Hide earlier career",
+    "printCv": "Save as PDF",
+    "backHome": "Back home",
+    "related": "Related work",
+    "highlights": "Highlights",
+    "role": "Role",
+    "status": "Status",
+    "tech": "Tech",
+    "scroll": "Scroll",
+    "noResults": "No projects match these filters.",
+    "featured": "Featured",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "formNote": "The form posts to your Web3Forms or Formspree endpoint. It stays hidden until that endpoint is set.",
+    "previous": "Previous certificates",
+    "next": "Next certificates"
+  },
+  "sections": {
+    "about": {
+      "id": "about",
+      "eyebrow": "01 — Profile",
+      "title": "Nine production apps. Five taken to the stores.",
+      "lede": "A senior React Native engineer who architects the client, integrates the AI, and signs the release."
+    },
+    "skills": {
+      "id": "skills",
+      "eyebrow": "02 — Capabilities",
+      "title": "Mobile, AI, and the release train.",
+      "lede": "Grouped the way the work actually happens. Filter a category or scan the whole set."
+    },
+    "experience": {
+      "id": "experience",
+      "eyebrow": "03 — Experience",
+      "title": "Concurrent products, one release standard.",
+      "lede": "Newest first. Full-time roles sit beside contract and freelance work."
+    },
+    "projects": {
+      "id": "work",
+      "eyebrow": "04 — Selected work",
+      "title": "Apps in the stores, and one still in the lab.",
+      "lede": "Featured products lead. Adding a project is one object in projects.json."
+    },
+    "education": {
+      "id": "education",
+      "eyebrow": "05 — Background",
+      "title": "Pharmaceutical science, then software.",
+      "lede": "A validated science degree, then a stack of engineering diplomas."
+    },
+    "contact": {
+      "id": "contact",
+      "eyebrow": "06 — Contact",
+      "title": "Let's build something.",
+      "lede": "A new mobile product, a release that needs an owner, or a team that wants a senior reviewer."
+    }
+  },
+  "status": {
+    "live": "Live",
+    "unreleased": "Unreleased",
+    "delisted": "Delisted"
+  },
+  "types": {
+    "full-time": "Full-time",
+    "freelance": "Freelance",
+    "contract": "Contract",
+    "part-time": "Part-time",
+    "prior": "Earlier career"
+  },
+  "footer": {
+    "rights": "Ahmed Kotp. All rights reserved.",
+    "hint": "The classic code still does something."
+  },
+  "intro": {
+    "line": "Senior React Native Developer"
+  },
+  "command": {
+    "placeholder": "Jump to a section or project",
+    "empty": "Nothing matches.",
+    "groupSections": "Sections",
+    "groupProjects": "Projects"
+  },
+  "profile": {
+    "title": "Senior React Native Developer | AI-Powered Mobile Apps",
+    "subtitle": "TypeScript, Expo, RAG Integration",
+    "tagline": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development.",
+    "summary": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development. Hands-on experience across 9 production apps, having independently deployed 5 to the App Store and Google Play, including high-traffic products such as the ElCoach suite, which serves over 100,000 users. Specializes in integrating AI directly into mobile products (a RAG-powered chatbot and real-time AI-assisted experiences) with strong fundamentals in TypeScript, cross-platform architecture and API integration. Leads code reviews and production sign-off for a small team and is comfortable managing several concurrent engagements.",
+    "availability": "Open to remote roles",
+    "languagesLabel": "Languages",
+    "locationLabel": "Based in"
+  },
+  "stats": [
+    {
+      "id": "software",
+      "label": "Years in software"
+    },
+    {
+      "id": "react-native",
+      "label": "Years React Native"
+    },
+    {
+      "id": "apps",
+      "label": "Production apps"
+    },
+    {
+      "id": "deployed",
+      "label": "Apps self-deployed"
+    },
+    {
+      "id": "users",
+      "label": "Users served"
+    }
+  ],
+  "roles": [
+    "Mobile Engineer",
+    "AI Integrator",
+    "Tech Lead"
+  ],
+  "cv": {
+    "kicker": "Curriculum vitae",
+    "print": "Print or save as PDF",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Selected work",
+    "education": "Education",
+    "certificates": "Certificates",
+    "languages": "Languages"
+  },
+  "educationHeading": "Education",
+  "certificatesHeading": "Certificates",
+  "terminal": {
+    "whoami": "whoami",
+    "role": "role",
+    "location": "location",
+    "shipped": "shipped"
+  }
+}

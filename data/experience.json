@@ -1,0 +1,143 @@
+[
+  {
+    "id": "leaderline",
+    "company": "Leaderline LMC",
+    "role": "Senior React Native Developer",
+    "period": "Nov 2025 – Present",
+    "location": "Saudi Arabia",
+    "type": "full-time",
+    "engagement": "Full-time · Remote",
+    "focus": "Doueh, a cross-platform marketplace and auctions app for buyers and sellers.",
+    "description": [
+      "Architected the client app from scratch (Expo + TypeScript): feature-sliced structure, navigation, and a typed data layer supporting search, multi-mode listings and seller flows.",
+      "Integrated AI-assisted discovery features to improve listing search and recommendations.",
+      "Implemented native modules and Expo config plugins beyond the managed workflow, including SSL pinning to harden API security.",
+      "Senior technical reviewer for the mobile team: code reviews for two junior/mid-level React Native and React developers, enforcing coding standards.",
+      "Final responsibility for production release approval to the App Store and Google Play."
+    ],
+    "tech": ["Expo", "TypeScript", "React Native", "SSL Pinning", "AI"],
+    "projectIds": ["doueh"],
+    "accent": "#8b5cf6"
+  },
+  {
+    "id": "fablebox",
+    "company": "Fablebox",
+    "role": "React Native Developer",
+    "period": "Jun 2026 – Oct 2026",
+    "location": "United States",
+    "type": "contract",
+    "engagement": "Contract · Remote",
+    "focus": "Foxtales, an AI-driven, automation-powered children's storytelling app (not yet released).",
+    "description": [
+      "Own frontend integration for AI-narrated storytelling: the interface layer connecting story content, ElevenLabs voice synthesis and automated story-generation pipelines.",
+      "Design child-friendly, accessible UI flows balancing interactivity with simplicity."
+    ],
+    "tech": ["React Native", "TypeScript", "ElevenLabs", "AI"],
+    "projectIds": ["foxtales"],
+    "accent": "#f59e0b"
+  },
+  {
+    "id": "roya",
+    "company": "Roya Media Group",
+    "role": "React Native Developer",
+    "period": "Aug 2025 – Dec 2025",
+    "location": "Jordan",
+    "type": "contract",
+    "engagement": "Project-based · Remote",
+    "focus": "RoyaGold, a real-time gold price monitoring app for MENA (since delisted).",
+    "description": [
+      "Led replatforming from a responsive web product to React Native CLI + TypeScript, shipping stable production releases.",
+      "Built WebSocket-driven live pricing with sub-second update latency and an end-to-end gold-to-cash calculator."
+    ],
+    "tech": ["React Native CLI", "TypeScript", "WebSockets"],
+    "projectIds": ["roya-gold", "roya-tv"],
+    "accent": "#eab308"
+  },
+  {
+    "id": "elcoach",
+    "company": "ElCoach Technology",
+    "role": "Mid-Level React Native Developer",
+    "period": "Sep 2024 – Sep 2025",
+    "location": "Egypt",
+    "type": "full-time",
+    "engagement": "Full-time · Hybrid",
+    "focus": "ElCoach, SuperCoach, Physiotherabia and TheSpecialist — fitness apps for workout and diet planning. The ElCoach suite serves 100K+ users.",
+    "description": [
+      "Migrated legacy class-component architecture to functional components with Hooks across four apps.",
+      "Triaged user-reported issues with support and analytics tooling, reducing recurring performance-related tickets by an estimated 25–30%.",
+      "Improved responsiveness using modern React Native and Redux performance practices.",
+      "Collaborated with UI/UX designers on a shared design system across four apps.",
+      "Integrated RESTful APIs for workout and diet-plan data with reliable sync."
+    ],
+    "tech": ["React Native", "TypeScript", "Redux", "REST"],
+    "projectIds": ["elcoach", "supercoach", "physiotherabia", "thespecialist"],
+    "accent": "#22d3ee"
+  },
+  {
+    "id": "pingcode",
+    "company": "PingCode",
+    "role": "React Native Developer",
+    "period": "Apr 2024 – May 2025",
+    "location": "Saudi Arabia",
+    "type": "part-time",
+    "engagement": "Part-time · Remote",
+    "focus": "Yalla Gym, an AI-powered fitness app for workout tracking and coaching.",
+    "description": [
+      "Delivered end-to-end on Expo/TypeScript, shipping live builds to the App Store and Google Play with subscriptions and payments.",
+      "Built real-time coach messaging via WebSockets plus workout, nutrition and progress flows using TanStack Query and Zustand."
+    ],
+    "tech": ["Expo", "TypeScript", "WebSockets", "TanStack Query", "Zustand"],
+    "projectIds": ["yalla-gym"],
+    "accent": "#fb7185"
+  },
+  {
+    "id": "xcute",
+    "company": "Xcute",
+    "role": "React Native Developer",
+    "period": "Jan 2023 – Aug 2024",
+    "location": "Netherlands",
+    "type": "full-time",
+    "engagement": "Remote",
+    "focus": "Zameel, an AI-powered legal-resource app for Saudi labor law (Google Play).",
+    "description": [
+      "Built and integrated a RAG-powered AI chatbot whose accuracy improves over time through retrieval-augmented training.",
+      "Designed the full mobile app for legal professionals with React Native and a Firestore backend."
+    ],
+    "tech": ["React Native", "RAG", "Firestore", "Redux"],
+    "projectIds": ["zameel"],
+    "accent": "#a3e635"
+  },
+  {
+    "id": "freelance",
+    "company": "Freelance",
+    "role": "Web & Mobile Developer",
+    "period": "2021 – 2022",
+    "location": "Remote",
+    "type": "freelance",
+    "engagement": "Freelance · Remote",
+    "focus": "Custom web and mobile solutions for small business clients.",
+    "description": [
+      "Delivered custom web and mobile solutions for small business clients, from requirements gathering to deployment."
+    ],
+    "tech": ["React Native", "React", "JavaScript"],
+    "projectIds": ["client-work"],
+    "accent": "#94a3b8"
+  },
+  {
+    "id": "medmark",
+    "company": "Medmark TPA",
+    "role": "Approval Medical Coordinator",
+    "period": "2017 – 2020",
+    "location": "Egypt",
+    "type": "prior",
+    "engagement": "Prior career",
+    "focus": "Healthcare coordination before moving into software engineering.",
+    "description": [
+      "Worked in healthcare coordination at Medmark TPA in Egypt before moving into software engineering."
+    ],
+    "tech": [],
+    "projectIds": [],
+    "accent": "#71717a",
+    "muted": true
+  }
+]

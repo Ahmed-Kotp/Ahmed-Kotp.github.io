@@ -1,0 +1,234 @@
+[
+  {
+    "id": "doueh",
+    "name": "Doueh",
+    "tagline": "Marketplace and auctions for buyers and sellers.",
+    "description": "A cross-platform marketplace and auctions app. Ahmed architected the Expo + TypeScript client from scratch: feature-sliced structure, navigation, and a typed data layer for search, multi-mode listings and seller flows, plus AI-assisted discovery and native modules including SSL pinning.",
+    "role": "Senior React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["Expo", "TypeScript", "React Native", "SSL Pinning", "AI"],
+    "highlights": [
+      "Architected the client from scratch with a feature-sliced structure and a typed data layer.",
+      "Integrated AI-assisted discovery for listing search and recommendations.",
+      "Shipped native modules and Expo config plugins, including SSL pinning.",
+      "Owned production release approval to the App Store and Google Play."
+    ],
+    "status": "live",
+    "featured": true,
+    "accent": "#8b5cf6",
+    "visual": "market",
+    "company": "Leaderline LMC"
+  },
+  {
+    "id": "foxtales",
+    "name": "Foxtales",
+    "tagline": "AI-narrated stories for children.",
+    "description": "An AI-driven, automation-powered children's storytelling app, not yet released. The work owns the interface layer that connects story content, ElevenLabs voice synthesis and automated story-generation pipelines, with child-friendly accessible flows.",
+    "role": "React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript", "ElevenLabs", "AI"],
+    "highlights": [
+      "Built the interface between story content, ElevenLabs voice and automated generation.",
+      "Designed child-friendly, accessible UI that stays simple while staying interactive."
+    ],
+    "status": "unreleased",
+    "featured": true,
+    "accent": "#f59e0b",
+    "visual": "story",
+    "company": "Fablebox"
+  },
+  {
+    "id": "elcoach",
+    "name": "ElCoach",
+    "tagline": "Workout and diet planning for a 100K+ user suite.",
+    "description": "A fitness app for workout and diet planning, and the flagship of the ElCoach suite, which serves over 100,000 users. The engagement migrated legacy class components to Hooks, tightened performance, and synced workout and diet data through REST.",
+    "role": "Mid-Level React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript", "Redux", "REST"],
+    "highlights": [
+      "Part of a suite serving 100K+ users.",
+      "Migrated class components to functional components and Hooks.",
+      "Reduced recurring performance-related tickets by an estimated 25–30%.",
+      "Integrated REST APIs for workout and diet-plan sync."
+    ],
+    "status": "live",
+    "featured": true,
+    "accent": "#22d3ee",
+    "visual": "fitness",
+    "metric": "100K+ users",
+    "company": "ElCoach Technology"
+  },
+  {
+    "id": "supercoach",
+    "name": "SuperCoach",
+    "tagline": "Trainer-side workout and diet planning.",
+    "description": "A fitness product in the ElCoach suite for workout and diet planning. Shared the suite-wide migration to Hooks, the design system, and REST sync for plans.",
+    "role": "Mid-Level React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript", "Redux", "REST"],
+    "highlights": [
+      "One of four suite apps migrated from class components to Hooks.",
+      "Shared a design system with ElCoach, Physiotherabia and TheSpecialist.",
+      "REST-backed workout and diet-plan data with reliable sync."
+    ],
+    "status": "live",
+    "featured": false,
+    "accent": "#34d399",
+    "visual": "fitness",
+    "company": "ElCoach Technology"
+  },
+  {
+    "id": "physiotherabia",
+    "name": "Physiotherabia",
+    "tagline": "Fitness planning in the ElCoach suite.",
+    "description": "A fitness app in the ElCoach suite focused on workout and diet planning. It went through the same architecture migration, performance work and shared design system as the rest of the suite.",
+    "role": "Mid-Level React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript", "Redux", "REST"],
+    "highlights": [
+      "Migrated to functional components and Hooks with the rest of the suite.",
+      "Performance work that contributed to a 25–30% drop in recurring tickets.",
+      "Aligned to a shared design system across four apps."
+    ],
+    "status": "live",
+    "featured": false,
+    "accent": "#38bdf8",
+    "visual": "fitness",
+    "company": "ElCoach Technology"
+  },
+  {
+    "id": "thespecialist",
+    "name": "TheSpecialist",
+    "tagline": "Specialist workout and diet planning.",
+    "description": "A fitness app in the ElCoach suite for workout and diet planning, shipped alongside ElCoach, SuperCoach and Physiotherabia with a shared design system and REST-backed plans.",
+    "role": "Mid-Level React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript", "Redux", "REST"],
+    "highlights": [
+      "Fourth app in the suite-wide Hooks migration.",
+      "Collaborated with UI/UX on the shared design system.",
+      "Reliable sync for workout and diet-plan data."
+    ],
+    "status": "live",
+    "featured": false,
+    "accent": "#a78bfa",
+    "visual": "fitness",
+    "company": "ElCoach Technology"
+  },
+  {
+    "id": "yalla-gym",
+    "name": "Yalla Gym",
+    "tagline": "AI-powered workout tracking and coaching.",
+    "description": "An AI-powered fitness app for workout tracking and coaching, delivered end-to-end on Expo and TypeScript and shipped to the App Store and Google Play with subscriptions, payments, and real-time coach messaging.",
+    "role": "React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["Expo", "TypeScript", "WebSockets", "TanStack Query", "Zustand", "Payments"],
+    "highlights": [
+      "Shipped live builds to the App Store and Google Play.",
+      "Subscriptions and payments in the production app.",
+      "Real-time coach messaging over WebSockets.",
+      "Workout, nutrition and progress flows with TanStack Query and Zustand."
+    ],
+    "status": "live",
+    "featured": true,
+    "accent": "#fb7185",
+    "visual": "fitness",
+    "company": "PingCode"
+  },
+  {
+    "id": "zameel",
+    "name": "Zameel",
+    "tagline": "Saudi labor law, with a RAG chatbot.",
+    "description": "An AI-powered legal-resource app for Saudi labor law, published on Google Play. It includes a RAG-powered chatbot whose answers improve over time, built in React Native with a Firestore backend for legal professionals.",
+    "role": "React Native Developer",
+    "platform": ["Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "RAG", "Firestore", "Redux"],
+    "highlights": [
+      "Built and integrated a RAG-powered AI chatbot.",
+      "Retrieval-augmented training so accuracy improves over time.",
+      "Full mobile app for legal professionals on Firestore."
+    ],
+    "status": "live",
+    "featured": true,
+    "accent": "#a3e635",
+    "visual": "chat",
+    "company": "Xcute"
+  },
+  {
+    "id": "roya-gold",
+    "name": "RoyaGold",
+    "tagline": "Live gold prices for MENA.",
+    "description": "A real-time gold price monitoring app for the MENA region, since delisted. It was replatformed from a responsive website to React Native CLI and TypeScript, with WebSocket pricing at sub-second latency and a gold-to-cash calculator.",
+    "role": "React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native CLI", "TypeScript", "WebSockets"],
+    "highlights": [
+      "Led the replatform from responsive web to React Native CLI + TypeScript.",
+      "WebSocket pricing with sub-second update latency.",
+      "End-to-end gold-to-cash calculator."
+    ],
+    "status": "delisted",
+    "featured": false,
+    "accent": "#eab308",
+    "visual": "gold",
+    "company": "Roya Media Group"
+  },
+  {
+    "id": "roya-tv",
+    "name": "Roya TV",
+    "tagline": "Parent broadcast brand of Roya Media Group.",
+    "description": "The parent broadcast app associated with the Roya Media Group engagement that also produced RoyaGold. Store buttons stay hidden until App Store or Google Play URLs are added to this entry.",
+    "role": "React Native Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "TypeScript"],
+    "highlights": [
+      "Parent media product alongside the RoyaGold price monitor.",
+      "Add store URLs in projects.json when the public listings should appear."
+    ],
+    "status": "live",
+    "featured": false,
+    "accent": "#f43f5e",
+    "visual": "broadcast",
+    "company": "Roya Media Group"
+  },
+  {
+    "id": "client-work",
+    "name": "Client Work",
+    "tagline": "Custom web and mobile products.",
+    "description": "Custom web and mobile solutions for small business clients, taken from requirements gathering through deployment during a freelance period.",
+    "role": "Web & Mobile Developer",
+    "platform": ["iOS", "Android"],
+    "appStoreUrl": "",
+    "playStoreUrl": "",
+    "tech": ["React Native", "React", "JavaScript"],
+    "highlights": [
+      "Requirements through deployment for small business clients.",
+      "Custom web and mobile solutions, scoped per engagement."
+    ],
+    "status": "live",
+    "featured": false,
+    "accent": "#94a3b8",
+    "visual": "generic",
+    "company": "Freelance"
+  }
+]

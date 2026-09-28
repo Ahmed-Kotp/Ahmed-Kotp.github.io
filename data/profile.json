@@ -1,0 +1,45 @@
+{
+  "name": "Ahmed Kotp",
+  "title": "Senior React Native Developer | AI-Powered Mobile Apps",
+  "subtitle": "TypeScript, Expo, RAG Integration",
+  "tagline": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development.",
+  "summary": "Senior React Native engineer with 4+ years shipping production mobile apps end-to-end and 6+ years total in software development. Hands-on experience across 9 production apps, having independently deployed 5 to the App Store and Google Play, including high-traffic products such as the ElCoach suite, which serves over 100,000 users. Specializes in integrating AI directly into mobile products (a RAG-powered chatbot and real-time AI-assisted experiences) with strong fundamentals in TypeScript, cross-platform architecture and API integration. Leads code reviews and production sign-off for a small team and is comfortable managing several concurrent engagements.",
+  "location": "Giza, Egypt",
+  "email": "Ahmedkotp4369@gmail.com",
+  "phone": "+20 114 343 6969",
+  "showPhone": false,
+  "availability": {
+    "status": "available",
+    "label": "Open to remote roles"
+  },
+  "socials": [
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/ahmedkotp"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/Ahmed-Kotp"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "url": "mailto:Ahmedkotp4369@gmail.com"
+    }
+  ],
+  "stats": [
+    { "id": "software", "value": 6, "suffix": "+", "label": "Years in software" },
+    { "id": "react-native", "value": 4, "suffix": "+", "label": "Years React Native" },
+    { "id": "apps", "value": 9, "suffix": "", "label": "Production apps" },
+    { "id": "deployed", "value": 5, "suffix": "", "label": "Apps self-deployed" },
+    { "id": "users", "value": 100, "suffix": "K+", "label": "Users served" }
+  ],
+  "languages": [
+    { "name": "Arabic", "level": "Native" },
+    { "name": "English", "level": "Professional" }
+  ],
+  "roles": ["Mobile Engineer", "AI Integrator", "Tech Lead"],
+  "cvPath": "/Ahmed_Kotp_CV.pdf"
+}

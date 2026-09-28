@@ -1,0 +1,87 @@
+{
+  "categories": [
+    {
+      "id": "mobile",
+      "label": "Mobile & Frontend",
+      "skills": [
+        { "name": "React Native", "level": 5, "icon": "smartphone" },
+        { "name": "Expo", "level": 5, "icon": "layers" },
+        { "name": "React Native CLI", "level": 4, "icon": "terminal" },
+        { "name": "ReactJS", "level": 4, "icon": "atom" },
+        { "name": "TypeScript", "level": 5, "icon": "braces" },
+        { "name": "JavaScript", "level": 5, "icon": "code" },
+        { "name": "Redux", "level": 4, "icon": "workflow" },
+        { "name": "Zustand", "level": 4, "icon": "box" },
+        { "name": "TanStack Query", "level": 4, "icon": "database" }
+      ]
+    },
+    {
+      "id": "ai",
+      "label": "AI & Real-Time",
+      "skills": [
+        { "name": "RAG", "level": 5, "icon": "spark" },
+        { "name": "AI Chatbot Integration", "level": 5, "icon": "bot" },
+        { "name": "ElevenLabs Voice Integration", "level": 4, "icon": "audio" },
+        { "name": "WebSockets", "level": 4, "icon": "radio" },
+        { "name": "Push Notifications", "level": 4, "icon": "bell" },
+        { "name": "Payments & Subscriptions", "level": 4, "icon": "card" }
+      ]
+    },
+    {
+      "id": "assisted",
+      "label": "AI-Assisted Development",
+      "skills": [
+        { "name": "Claude Code", "level": 4, "icon": "spark" },
+        { "name": "Cursor", "level": 4, "icon": "cursor" }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend & Data",
+      "skills": [
+        { "name": "Node.js", "level": 3, "icon": "server" },
+        { "name": "Sequelize", "level": 3, "icon": "database" },
+        { "name": "Firestore", "level": 4, "icon": "flame" },
+        { "name": "Supabase", "level": 3, "icon": "cloud" },
+        { "name": "Convex", "level": 3, "icon": "cloud" },
+        { "name": "RESTful APIs", "level": 5, "icon": "radio" },
+        { "name": "OAuth", "level": 4, "icon": "key" }
+      ]
+    },
+    {
+      "id": "native",
+      "label": "Native & Deployment",
+      "skills": [
+        { "name": "App Store", "level": 5, "icon": "apple" },
+        { "name": "Google Play", "level": 5, "icon": "play" },
+        { "name": "Android Studio", "level": 4, "icon": "smartphone" },
+        { "name": "Xcode", "level": 4, "icon": "apple" },
+        { "name": "Swift", "level": 3, "icon": "code" },
+        { "name": "Kotlin", "level": 3, "icon": "code" },
+        { "name": "CI/CD", "level": 4, "icon": "workflow" }
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership & Architecture",
+      "skills": [
+        { "name": "Team Lead", "level": 4, "icon": "users" },
+        { "name": "Code Review", "level": 5, "icon": "check" },
+        { "name": "System Design", "level": 4, "icon": "layout" },
+        { "name": "Software Architecture", "level": 4, "icon": "layers" }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Tools & Practices",
+      "skills": [
+        { "name": "Git/GitHub", "level": 5, "icon": "git" },
+        { "name": "Figma", "level": 4, "icon": "figma" },
+        { "name": "Agile/Scrum", "level": 4, "icon": "workflow" },
+        { "name": "Jest", "level": 3, "icon": "test" },
+        { "name": "Debugging & Testing", "level": 4, "icon": "bug" },
+        { "name": "Responsive Design", "level": 4, "icon": "layout" }
+      ]
+    }
+  ]
+}

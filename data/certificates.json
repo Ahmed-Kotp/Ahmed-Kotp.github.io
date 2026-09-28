@@ -1,0 +1,44 @@
+[
+  {
+    "id": "udemy-ai-rn",
+    "name": "Build an AI-Powered React Native ChatGPT Mobile App",
+    "issuer": "Udemy",
+    "year": "2024"
+  },
+  {
+    "id": "udemy-rn",
+    "name": "React Native – The Practical Guide",
+    "issuer": "Udemy",
+    "year": "2023"
+  },
+  {
+    "id": "route-frontend",
+    "name": "Front-End Development React Diploma",
+    "issuer": "Route Academy",
+    "year": "2022"
+  },
+  {
+    "id": "route-backend",
+    "name": "Back-End Development Node.js Diploma",
+    "issuer": "Route Academy",
+    "year": "2022"
+  },
+  {
+    "id": "route-principles",
+    "name": "Programming Principles",
+    "issuer": "Route Academy",
+    "year": "2021"
+  },
+  {
+    "id": "udacity-nanodegree",
+    "name": "Programming Nanodegree",
+    "issuer": "Udacity",
+    "year": "2018"
+  },
+  {
+    "id": "udacity-web",
+    "name": "Principles of Web Development",
+    "issuer": "Udacity",
+    "year": "2017"
+  }
+]
